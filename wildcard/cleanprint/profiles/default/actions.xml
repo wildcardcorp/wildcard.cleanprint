@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+        xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <object name="document_actions" meta_type="CMF Action Category">
+    <object name="Wildcard.CleanPrint-cleanprint" meta_type="CMF Action">
+      <property name="title">cleanprint</property>
+      <property name="description"></property>
+      <property name="url_expr">string:javascript:CleanPrintPrintHtml();return false;</property>
+      <property name="link_target"></property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions"/>
+      <property name="visible">True</property>
+    </object>
+    <object name="Wildcard.CleanPrint-pdf" meta_type="CMF Action">
+      <property name="title">pdf</property>
+      <property name="description"></property>
+      <property name="url_expr">string:javascript:CleanPrintGeneratePdf();return false;</property>
+      <property name="link_target"></property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions"/>
+      <property name="visible">True</property>
+    </object>
+    <object name="Wildcard.CleanPrint-email" meta_type="CMF Action">
+      <property name="title">email</property>
+      <property name="description"></property>
+      <property name="url_expr">string:javascript:CleanPrintSendEmail();return false</property>
+      <property name="link_target"></property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions"/>
+      <property name="visible">True</property>
+    </object>
+  </object>
+</object>

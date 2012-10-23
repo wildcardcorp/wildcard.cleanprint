@@ -1,0 +1,3 @@
+<tal:extra-head omit-tag="" condition='python: viewlet.cleanprinturl() is not None'>
+    <script tal:attributes="src viewlet/cleanprinturl"></script>
+</tal:extra-head>

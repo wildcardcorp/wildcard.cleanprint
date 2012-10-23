@@ -1,0 +1,26 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:cmf="http://namespaces.zope.org/cmf"
+           xmlns:grok="http://namespaces.zope.org/grok"
+           i18n_domain="wildcard.cleanprint">
+
+    <includeDependencies package="." />
+    <grok:grok package="." />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="Wildcard.CleanPrint"
+        directory="profiles/default"
+        description="CleanPrint integration for Plone"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+    <browser:page
+        name="cleanprint-settings"
+        for="Products.CMFCore.interfaces._content.ISiteRoot"
+        class=".controlpanel.CleanPrintSettingsConfiglet"
+        layer=".interfaces.ILayer"
+        permission="cmf.ManagePortal" />
+
+</configure>
