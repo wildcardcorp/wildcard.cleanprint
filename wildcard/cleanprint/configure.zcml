@@ -16,6 +16,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="Wildcard.CleanPrint Uninstall Profile"
+        directory="profiles/uninstall"
+        description="Removes Wildcard.CleanPrint"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
     <browser:page
         name="cleanprint-settings"
         for="Products.CMFCore.interfaces._content.ISiteRoot"

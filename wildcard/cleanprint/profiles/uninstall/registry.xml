@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records interface="wildcard.cleanprint.interfaces.ICleanPrintSettings" />
+
+</registry>

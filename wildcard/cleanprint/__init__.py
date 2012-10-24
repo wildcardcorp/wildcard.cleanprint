@@ -1,7 +1,7 @@
 # -*- extra stuff goes here -*-
 
 from zope.i18nmessageid import MessageFactory
-EventManagerMessageFactory = \
+WildcardCleanPrintMessageFactory = \
     MessageFactory('wildcard.cleanprint')
 
 
