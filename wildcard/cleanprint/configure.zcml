@@ -3,8 +3,11 @@
            xmlns:browser="http://namespaces.zope.org/browser"
            xmlns:cmf="http://namespaces.zope.org/cmf"
            xmlns:grok="http://namespaces.zope.org/grok"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           xmlns:five="http://namespaces.zope.org/five"
            i18n_domain="wildcard.cleanprint">
 
+    <five:registerPackage package="." initialize=".initialize" />
     <includeDependencies package="." />
     <grok:grok package="." />
 
